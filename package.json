@@ -10,7 +10,9 @@
     "lib"
   ],
   "scripts": {
-    "build": "rm -rf lib && tsc",
+    "cleanup": "del-cli lib",
+    "build": "tsc -p .",
+    "prebuild": "npm run cleanup",
     "test": "jest --runInBand"
   },
   "author": "aljazerzen",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
+    "del-cli": "^1.1.0",
     "jest": "^23.5.0",
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.3"
