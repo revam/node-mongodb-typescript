@@ -19,15 +19,19 @@
   "license": "ISC",
   "repository": "https://github.com/aljazerzen/mongodb-typescript.git",
   "dependencies": {
-    "@types/mongodb": "^3.1.4",
-    "class-transformer": "^0.1.9",
-    "mongodb": "3.1.4",
-    "reflect-metadata": "^0.1.12"
+    "class-transformer": "^0.1.9"
+  },
+  "peerDependencies": {
+    "mongodb": "^3.0.0",
+    "reflect-metadata": "~0.1.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
+    "@types/mongodb": "^3.1.4",
     "del-cli": "^1.1.0",
     "jest": "^23.5.0",
+    "mongodb": "^3.1.4",
+    "reflect-metadata": "^0.1.12",
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.3"
   }
